@@ -1,0 +1,25 @@
+
+@use "../mixins/responsive.scss" as *;
+
+
+.hidden{
+
+    display: none;
+    
+}
+
+.padding {
+	padding: 0 1.875rem;
+
+    @include responsive(laptop){
+		padding: 0 5rem;
+	}
+}
+
+.bg-black {
+
+    background-image: none;
+	background-color: black;
+
+}
+

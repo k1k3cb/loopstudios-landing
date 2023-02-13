@@ -1,0 +1,75 @@
+/* ESTILOS DEL FOOTER */
+@use "../mixins/responsive.scss" as *;
+
+.footer {
+	padding-top: 3.75rem;
+	text-align: center;
+	background-color: black;
+}
+
+.footer__container {
+	@include responsive(laptop) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.footer__container-logo {
+	margin-bottom: 2.5rem;
+    @include responsive(laptop) {
+        text-align: start;
+        margin-bottom: 25px;
+        }
+    
+}
+
+.footer__nav {
+	margin-bottom: 2.8125rem;
+
+    @include responsive(laptop) {
+	display: flex;
+   
+	}
+}
+
+.footer__nav-link {
+	color: white;
+	display: block;
+	margin: 1.875rem 0;
+	font-size: 1.25rem;
+    @include responsive(laptop) {
+
+       
+        margin-top: 0;
+        margin-right: 1.875rem;
+        
+        }
+}
+
+.footer__social-media {
+	@include responsive(laptop) {
+		grid-row-start: 1;
+		// grid-row-end: 2;
+		grid-column-start: 2;
+		grid-column-end: 3;
+        text-align: end;
+	}
+}
+
+.footer__social-media-icon {
+	margin: 0 0.625rem;
+	width: 1.875rem;
+}
+
+.footer__copyright {
+	color: var(--text-color);
+	margin-bottom: 0;
+	padding-bottom: 3.125rem;
+	font-family: "Alata", sans-serif;
+	font-size: 1rem;
+
+    @include responsive(laptop) {
+        text-align: end;
+        margin-top: 0;
+        }
+}
