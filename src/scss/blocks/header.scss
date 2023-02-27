@@ -1,7 +1,7 @@
 @use "../mixins/responsive.scss" as *;
 
 .header {
-	background-image: url("/../assets/images/mobile/image-hero.jpg");
+	background-image: url("/assets/images/mobile/image-hero.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100vh;
@@ -10,7 +10,7 @@
 	margin-bottom: 6.25rem;
 
 	@include responsive(laptop) {
-		background-image: url("/../assets/images/desktop/image-hero.jpg");
+		background-image: url("/assets/images/desktop/image-hero.jpg");
 		background-size: contain;
 		height: 57vh;
 	}
